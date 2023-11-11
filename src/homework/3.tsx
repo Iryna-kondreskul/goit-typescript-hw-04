@@ -4,6 +4,7 @@ export function FormComponent() {
   const [value, setValue] = useState("");
 
   const handleChange = (event) => {
+    event.preventDefault();
     setValue(event.target.value);
   };
 

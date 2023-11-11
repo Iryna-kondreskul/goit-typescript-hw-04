@@ -5,6 +5,10 @@ type MenuIds = "first" | "second" | "last";
 type Menu = { id: MenuIds; title: string };
 
 // Додати тип Menu Selected
+type SelectedMenu = {
+  id:MenuIds;
+}
+type MenuSelected{}
 
 const MenuSelectedContext = createContext<MenuSelected>({
   selectedMenu: {},
